@@ -1,4 +1,4 @@
-job ('TESTE') {
+job ('PROJETO') {
   scm {
     git {
       remote {
@@ -10,6 +10,9 @@ job ('TESTE') {
   }
   steps {
   	shell ('python check_versions.py')
+  }
+  wrappers{
+	timestamp()
   }
 }
 
