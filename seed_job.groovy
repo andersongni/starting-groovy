@@ -1,5 +1,5 @@
 job ('PROJETO') {
-  logrotator{
+  logRotator {
     numToKeep(5)
   }
   wrappers{
