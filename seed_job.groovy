@@ -1,4 +1,10 @@
 job ('PROJETO') {
+  logrotator{
+    numToKeep(5)
+  }
+  wrappers{
+	timestamps()
+  }
   scm {
     git {
       remote {
@@ -10,9 +16,6 @@ job ('PROJETO') {
   }
   steps {
   	shell ('python check_versions.py')
-  }
-  wrappers{
-	timestamps()
   }
 }
 
