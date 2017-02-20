@@ -12,7 +12,7 @@ job ('PROJETO') {
   	shell ('python check_versions.py')
   }
   wrappers{
-	timestamp()
+	timestamps()
   }
 }
 
